@@ -6,14 +6,14 @@
 }
 html {
     font-size: 62.5%;
-    --logo-font: 'Poppins', sans-serif;
+    --heading-font: 'Poppins', sans-serif;
     --body-fonts:'Open Sans', sans-serif;
     --button-bg: hsl(300, 69%, 71%);
     --body-bg: hsl(257, 40%, 49%);
 }
 
 body {
-    padding: 5rem;
+    padding: 3rem 5rem;
     background-image: url("./assets/images/bg-desktop.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -21,21 +21,27 @@ body {
 }
 
 h1 {
-    font-size: 5rem;
-    margin-bottom: 3rem;
+    font-size: 3.8rem;
+    margin-bottom: 1rem;
+    font-family:var(--heading-font);
+    font-weight: 700;
+    color: white;
 }
 
 p {
-    font-size:1.8rem;
-    text-align: center;
-    margin-bottom: 3rem;
+    font-size:1.5rem;
+    margin-bottom: 2rem;
+    padding-right:6rem;
+    font-family: var(--body-fonts);
+    color: white;
 }
+
 /* LOGO STYLES */
 .logo-container {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin:2rem 0;
+    margin: 3rem  0;
 }
 
 
@@ -43,6 +49,7 @@ p {
 .main-content-container {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom:2rem;
 }
 .main-image-container {
     flex: 1 1 40rem;
@@ -54,7 +61,8 @@ p {
     object-fit: cover;
 }
 .main-text {
-    flex: 1 1 20rem;
+    flex: 1 1 40rem;
+    padding: 4rem 8rem;
 }
 
 button {
@@ -63,7 +71,8 @@ button {
     border: none;
     background-color:var(--button-bg);
     font-size: 2rem;
-    box-shadow: 3px 
+    color: white;
+    font-family: var(--body-fonts);
 }
 
 button:hover {
@@ -78,11 +87,10 @@ button:hover {
     justify-content: flex-end;
 }
 
-.icons-group img {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 100%;
-    border: 2px solid red;
-    padding: 0.5rem;
-    
+.fa-stack {
+    color: white;
+}
+.fa-stack:hover {
+    cursor: pointer;
+    color: var(--button-bg);
 }
