@@ -103,10 +103,11 @@ button:hover {
         background-repeat: no-repeat;
         background-position: center;
         height:100vh;
+        padding:3rem 2rem;
     }
 
     h1 {
-        font-size:1.9rem;
+        font-size:2rem;
         text-align: center;
         margin-bottom: 0.5rem;
     }
